@@ -581,13 +581,14 @@ ul {
 @media (max-width: 768px) {
   .hero {
     flex-direction: column-reverse;
-    padding: 120px 24px 60px;
+    padding: 180px 24px 60px;   /* increased from 120px */
     text-align: center;
   }
 
   .hero-photo img {
     width: 220px;
     height: 220px;
+    object-fit: cover;          /* add this */
   }
 
   .hero-cta {
@@ -622,14 +623,6 @@ ul {
     min-width: auto;
     flex: 1;
   }
-}
-.section-title {
-  text-align: center;
-}
-
-.section-title::after {
-  left: 50%;
-  transform: translateX(-50%);
 }
 /* ===========================
    LOGO IMAGE (ONLY ADD THIS)
